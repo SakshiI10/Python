@@ -1,0 +1,5 @@
+print('This is Python')
+print('This','is','Python')
+print('This','is','Python', sep='  ')
+print('This','is','Python', sep='\n')
+print('This','is','Python', end='.')
