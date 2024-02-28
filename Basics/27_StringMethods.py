@@ -17,9 +17,11 @@ print(str.count("lar"))
 print(str.count('lar',10))
 print(str.count('lar', 10, 20))
 
-# 5) startswith()
-
 c="INDIAN"
+# 5) startswith()
+print(c.endswith('N'))
+print(c.endswith('n'))
+
 # 6) endswith()
 print(c.endswith('N'))
 print(c.endswith('n'))
@@ -42,10 +44,10 @@ print('SAKSHI'.isupper())
 print('sakshi'.islower())
 
 # 11) upper()
-
+print("SAKSHI".upper())
 
 # 12) lower()
-print("Sakshi".lower())
+print("Sakshi".lower()) 
 
 I="python in OOP language"
 # 13) capitalize()
@@ -63,6 +65,7 @@ print(t2.istitle())
 print(t3.istitle())
 
 # 16) title()
+print("new delhi".title())
 
 # 17) center()
 print(I.center(24,'-'))

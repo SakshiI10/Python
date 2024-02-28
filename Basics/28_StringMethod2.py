@@ -9,55 +9,71 @@ j="*"
 print(j.join("abcd"))
 
 # 24) swapcase()
+print("New Delhi".swapcase())
 
-
-# 25) splitlines()
-
-# 26) maketrans()
-# 27) translate()
+# 25) maketrans()
+# 26) translate()
 source="abcdefgh"
 target="12345678"
 trans_table=str.maketrans(source,target)
 code="dad has cad".translate(trans_table)
 print(code)
 
-# 28) replace()
+# 27) replace()
 deg="B Tech"
 print(deg.replace('B','M'))
 
 c='INDIAN'
-# 29) find()
+# 28) find()
 print(c.find('I'))
 print(c.find('I', 1, 6))
 
-# 30) rfind()
+# 29) rfind()
 print("sakshi".rfind('s'))
 
-# 31) index()
+# 30) index()
 print(c.index('A'))
 
-# 32) rindex()
+# 31) rindex()
 print("sakshi".rindex('s'))
 
-
-# 33) ljust()
+# 32) ljust()
 print("abc".ljust(10,"*"))
 
-# 34) rjust()
+# 33) rjust()
 print("abc".rjust(10,"*"))
 
-
-# 35) partition()
+# 34) partition()
 print("Programming".partition("ram"))
 
-# 36) rpartition()
+# 35) rpartition()
 print("Programming".rpartition("ram"))
 
-# 37) strip()
-# 38) lstrip()
-# 39) rstrip()
+# 36) lstrip()
+print(" All is Wel".lstrip(),"!")
+print("***All is Well***".lstrip("*"))
+print("***All is Well***".lstrip("A"))
+print("***All is Well***".lstrip("All"))
 
-# 40) split()
-# 41) rsplit()
+# 37) rstrip()
+print(" All is Wel".rstrip(),"!")
+print("***All is Well***".rstrip("*"))
+print("***All is Well***".rstrip("A"))
+print("***All is Well***".rstrip("All"))
+
+# 38) strip()
+print(" All is Wel".rstrip(),"!")
+
+# 39) split()
+print("abc-def-ghi-jkl".split('-'))
+print("abc-def-ghi-jkl".split('-',2))
+
+# 40) rsplit()
+print("abc-def-ghi-jkl".rsplit('-'))
+print("abc-def-ghi-jkl".rsplit('-',2))
+
+# 41) splitlines()
+print("123\n\n456\n789\n\n".splitlines())
 
 # 42) zfill()
+print("abc".zfill(10))
