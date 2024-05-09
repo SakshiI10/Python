@@ -18,7 +18,7 @@ for i in t4:
 # 3) Handling tuple
 user_details=('SI', 10, 'BE', 'Pune')
 (name, age, education, address)=user_details
-print(name)
+print(name)  
 print(age)
 print(education)
 print(address)
