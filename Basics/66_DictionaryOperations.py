@@ -24,3 +24,27 @@ student_details={100:"abc", 200: "def", 300: "ghi"}
 print(student_details)
 student_details[400]="jkl"
 print(student_details)
+
+''' 
+Update Values in Dictionary:
+1. We can also use [] to change the value associated witha particular key.
+2. If the key is already available then old value will be replaced with new value.
+[key]=value
+'''
+student_details[500]="mno"
+print(student_details)
+''' 
+
+Delete Elements from the Dictionary
+1. del statement can be used to delete an element from the dictionary.
+del d[key]
+'''
+del student_details[500]
+print(student_details)
+
+''' 
+2. clear(): to remove all entries from the dictionary.
+'''
+student_details.clear()
+print(student_details)
+
