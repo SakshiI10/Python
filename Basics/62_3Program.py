@@ -1,4 +1,4 @@
-# Find the length of a set.
+# Find the length, max and min of a set.
 
 set={5, 10, 15, 20, 25, 30}
 print(set)
@@ -12,3 +12,6 @@ print(type(set2))
 set3={1,1,1,1,1,2,2}
 print(set3)
 print(type(set3))
+
+print(max(set))
+print(min(set))
