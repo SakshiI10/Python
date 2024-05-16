@@ -63,3 +63,4 @@ If the key is not available then the specified key-value will be added as new it
 '''
 print(d.setdefault(4, "jkl"))
 print(d)
+
