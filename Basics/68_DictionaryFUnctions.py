@@ -13,7 +13,7 @@ print(d)
 To get the value associated with the key.
 d.get(key)
 '''
-#print(d.get(1))
+#print(d.get(1))               
 
 ''' 
 3. pop()
