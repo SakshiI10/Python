@@ -20,7 +20,7 @@ d.get(key)
 It removes the entry associated with the specified key and returns the corresponding value if the specified key is not available then we will get KeyError
 '''
 #print(d.pop(3))
-
+            
 ''' 
 4. popitem()
 It removes an arbitrary item(key-value) from the dictionary and returns it.
