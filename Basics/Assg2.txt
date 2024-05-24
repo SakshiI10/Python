@@ -1,0 +1,57 @@
+from datetime import datetime, date, time, timedelta
+
+# 1. Creating datetime, date, and time objects
+dt = datetime(2024, 5, 23, 14, 30, 45)
+d = date(2024, 5, 23)
+t = time(14, 30, 45)
+
+print(f"Datetime object: {dt}")
+print(f"Date object: {d}")
+print(f"Time object: {t}")
+
+# 2. Parsing strings to create datetime objects
+dt_from_str = datetime.strptime('2024-05-23 14:30:45', '%Y-%m-%d %H:%M:%S')
+print(f"Parsed datetime from string: {dt_from_str}")
+
+# 3. Formatting datetime objects as strings
+formatted_dt = dt.strftime('%Y-%m-%d %H:%M:%S')
+print(f"Formatted datetime as string: {formatted_dt}")
+
+# 4. Calculating differences between dates
+start_date = date(2024, 1, 1)
+end_date = date(2024, 5, 23)
+date_diff = end_date - start_date
+print(f"Difference between dates: {date_diff.days} days")
+
+# 5. Adding timedeltas to datetime objects
+original_dt = datetime(2024, 5, 23, 14, 30, 45)
+time_delta = timedelta(days=5, hours=3, minutes=30)
+new_dt = original_dt + time_delta
+print(f"New datetime after adding timedelta: {new_dt}")
+
+# Additional Examples:
+
+# Parsing a date string and formatting it in a different format
+date_str = '23/05/2024'
+parsed_date = datetime.strptime(date_str, '%d/%m/%Y')
+formatted_date_str = parsed_date.strftime('%A, %d %B %Y')
+print(f"Parsed and formatted date string: {formatted_date_str}")
+
+# Calculating the difference between two datetime objects
+start_dt = datetime(2024, 5, 23, 8, 0, 0)
+end_dt = datetime(2024, 5, 23, 14, 30, 0)
+dt_diff = end_dt - start_dt
+print(f"Difference between datetimes: {dt_diff}")
+
+# Adding a timedelta to a date object
+original_date = date(2024, 5, 23)
+new_date = original_date + timedelta(days=10)
+print(f"New date after adding 10 days: {new_date}")
+
+# Subtracting a timedelta from a datetime object
+subtracted_dt = original_dt - timedelta(weeks=1)
+print(f"Datetime after subtracting one week: {subtracted_dt}")
+
+if __name__ == "__main__":
+    # You can add test cases or additional examples here if needed.
+    pass
