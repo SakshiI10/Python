@@ -1,13 +1,7 @@
 ''' 
 Date Class
 Syntax: class datetime.date(year, month, day)
-'''
-
-''' import datetime
-my_date=datetime.date(2023,5,30)
-print("Passed date is:",my_date) '''
-
-''' 
+ 
 Functions:
 min
 max
@@ -18,6 +12,9 @@ day
 '''
 
 from datetime import date
+
+my_date=date(2023,5,30)
+print("Passed date is:",my_date)
 
 mindate=date.min 
 print("Min date supported", mindate)
