@@ -1,0 +1,16 @@
+from tkinter import Tk, Scrollbar, Scale, VERTICAL, HORIZONTAL
+
+# Create the main window
+root = Tk()
+root.title("Scrollbar and Scale Widget Example")
+
+# Create a vertical scrollbar
+v_scrollbar = Scrollbar(root, orient=VERTICAL)
+v_scrollbar.pack(side='right', fill='y')
+
+# Create a horizontal scale
+h_scale = Scale(root, from_=0, to=100, orient=HORIZONTAL)
+h_scale.pack(side='bottom', fill='x')
+
+# Start the Tkinter event loop
+root.mainloop()

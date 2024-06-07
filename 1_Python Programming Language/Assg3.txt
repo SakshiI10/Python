@@ -1,0 +1,34 @@
+from tkinter import Tk, Label, Entry, Text, Button
+
+# Initialize the main window
+root = Tk()
+root.title("Contact Form")
+
+# Function to handle form submission
+def submit_form():
+    name = name_entry.get()
+    email = email_entry.get()
+    message = message_entry.get("1.0", "end-1c")
+    print(f"Name: {name}")
+    print(f"Email: {email}")
+    print(f"Message: {message}")
+
+# Create and place the labels and entry fields for the form
+Label(root, text="Name").grid(row=0, column=0, padx=10, pady=5)
+name_entry = Entry(root)
+name_entry.grid(row=0, column=1, padx=10, pady=5)
+
+Label(root, text="Email").grid(row=1, column=0, padx=10, pady=5)
+email_entry = Entry(root)
+email_entry.grid(row=1, column=1, padx=10, pady=5)
+
+Label(root, text="Message").grid(row=2, column=0, padx=10, pady=5)
+message_entry = Text(root, height=10, width=30)
+message_entry.grid(row=2, column=1, padx=10, pady=5)
+
+# Create and place the submit button
+submit_button = Button(root, text="Submit", command=submit_form)
+submit_button.grid(row=3, column=0, columnspan=2, pady=10)
+
+# Run the main loop
+root.mainloop()
