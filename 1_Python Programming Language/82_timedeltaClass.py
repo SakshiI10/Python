@@ -26,3 +26,4 @@ print(t3)
 #modulo
 t3=t2%timedelta(days=3)
 print(t3)
+
