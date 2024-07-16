@@ -1,3 +1,8 @@
+'''
+1. Keyword def followed by paranthesis() is used to define user-defined function.
+
+2. Parathesis() contains
+'''
 def square(n):
     return n 
 
