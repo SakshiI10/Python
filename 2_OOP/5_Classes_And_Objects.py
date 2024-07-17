@@ -2,7 +2,7 @@
 1. Classes:
 a. Python reserved keyword "class" is used to create class.
 
-b. Class contains class attributes (These are the properties defined as variable declaration by assigning value) and class methods (These reflects behaviour or description of object).
+b. Class contains class attributes (These are the properties defined as variable declaration by assigning value) and class methods (This reflects behaviour or description of object).
 
 c. Syntax:
     class classname:
