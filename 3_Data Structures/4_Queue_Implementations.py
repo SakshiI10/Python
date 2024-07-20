@@ -113,3 +113,30 @@ print("Queue after dequeuing from the middle:", queue._items)
 
 # Attempt to dequeue from an empty queue
 print("Dequeued from empty queue (end):", queue.dequeue_end())
+
+
+'''
+4. Time Complexities:
+Insertion (at the end): O(1) on average (amortized)
+Example: lst.append(item).
+
+Insertion (at the beginning or middle): O(n)
+Example: lst.insert(0, item) or lst.insert(i, item).
+
+Deletion (from the end): O(1)
+Example: lst.pop().
+
+Deletion (from the beginning or middle): O(n)
+Example: lst.pop(0) or del lst[i].
+
+Access (by index): O(1)
+Example: lst[i] where i is the index.
+
+Search (by value): O(n)
+Example: value in lst or lst.index(value).
+
+Slicing: O(k) where k is the length of the slice.
+Example: lst[start:end].
+
+Concatenation: O(k) where k is the length of the list being concatenated.
+Example: lst1 + lst2.'''
