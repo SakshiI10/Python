@@ -10,14 +10,8 @@ c. Syntax:
         method_definition
     object=classname();
 
-    
-
-
 2. Objcts:
 a. An object is an instance of a class.
-
-
-
 
 3. Relationship between Classes and Objects:
 a. Create a class first, which serves as the blueprint.
@@ -47,3 +41,11 @@ dog2.age = 1
 # Call methods on the objects
 dog1.bark()  
 dog2.bark()  
+
+'''
+4. When class is defined, no memory is allocated. It is a logical entity that contains attributes and methods.
+
+5. Method is a function defined inside a class, memory is allocated because it contains local variables, arguments and return address.
+
+6. Object is an instantiation of a class, memrory is allocated. It is an encapsulation of variables and functions into a single entity.
+'''
