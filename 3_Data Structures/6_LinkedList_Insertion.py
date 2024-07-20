@@ -1,5 +1,4 @@
 # Insertion in Linked List:
-# 1. Insertion at Beginning:
 
 class Node:
     def __init__(self, data):
