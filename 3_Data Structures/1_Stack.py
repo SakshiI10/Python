@@ -3,8 +3,7 @@ Stack:
 1. A stack is a fundamental data structure that operates based on the "Last In, First Out" (LIFO) principle.
 
 2. Implementation: 
-Stacks can be implemented using arrays or linked lists. 
-Arrays are simpler for fixed-size stacks, while linked lists provide dynamic resizing for stacks that grow or shrink as needed.
+Stacks can be implemented using List, Linked lists, collection.deque or queue.LifeoQueue. 
 
 3. Real-world examples of stacks:
 a. Undo/Redo functionality
