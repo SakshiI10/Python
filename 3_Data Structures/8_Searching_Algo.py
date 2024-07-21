@@ -1,7 +1,13 @@
-# Searching Algorithms:
-# Searching algorithms are fundamental techniques used in computer science to locate a specific element within a data structure.
+'''Searching Algorithms:
+Searching algorithms are fundamental techniques used in computer science to locate a specific element within a data structure.'''
 
-# 1. Linear Search
+'''1. Linear Search
+a. Linear search is the simplest searching algorithm. It sequentially checks each element of the list until it finds the target value.
+b. Time Complexity: O(n)
+Best Case: O(1)
+Worst Case: O(n)
+Average Case: O(n)'''
+
 def linear_search(arr, target):
     for i in range(len(arr)):
         if arr[i] == target:
@@ -17,8 +23,13 @@ else:
     print("Linear Search: Element not found")
 
 
-# 2. Binary Search
-# Binary search is a more efficient algorithm but requires the list to be sorted. It works by repeatedly dividing the search interval in half. If the target value is less than the middle element, the search continues in the lower half; otherwise, it continues in the upper half.
+''' 2. Binary Search
+a. Binary search is a more efficient algorithm but requires the list to be sorted. It works by repeatedly dividing the search interval in half. If the target value is less than the middle element, the search continues in the lower half; otherwise, it continues in the upper half.
+b. Time Complexity: O(log n)
+Best Case: O(1)
+Worst Case: O(log n)
+Average Case: O(log n)'''
+
 def binary_search(arr, target, low, high):
     if low <= high:
         mid = (low + high) // 2
@@ -40,8 +51,13 @@ else:
     print("Binary Search: Element not found")
 
 
-# Exponential Search:
-# Exponential search is particularly useful for unbounded or infinite lists. It starts by finding a range where the target element may reside and then uses binary search within that range.
+'''3. Exponential Search:
+a. Exponential search is particularly useful for unbounded or infinite lists. It starts by finding a range where the target element may reside and then uses binary search within that range.
+b. Time Complexity: O(log n)
+Best Case: O(1)
+Worst Case: O(log i) + O(log n)
+Average Case: O(log n)'''
+
 def binary_search(arr, target, low, high):
     if low <= high:
         mid = (low + high) // 2
