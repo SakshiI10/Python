@@ -1,40 +1,40 @@
 '''
-Stack:
+Queue:
 1. A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle
 
 2. Implementation: 
-Stacks can be implemented using List, collection.dequeue or queue.Queue. 
+Queue can be implemented using List, collection.dequeue or queue.Queue. 
 
-3. Real-world examples of stacks:
+3. Real-world examples of queue:
 a. Task Scheduling
 b. Order Processing Systems
 c. BFS in Graphs
 
-4. Operations: T
+4. Operations: 
 These are basic operations that manipulate the queue:
 a. Enqueue: Add an item to the end of the queue.
 b. Dequeue: Remove and return the item from the front of the queue.
 c. Peek/Front: Return the item at the front of the queue without removing it.
 d. is_empty: Check if the queue is empty.
-e. size: Return the number of items in the queue.).
+e. size: Return the number of items in the queue.
 '''
 
 class Queue:
     def __init__(self):
-        self._items = []
+        self.items = []
         self.front = 0
         self.rear = 0
 
     def enqueue(self, item):
         # Add an item to the end of the queue.
-        self._items.append(item)
+        self.items.append(item)
         self.rear += 1
 
     def dequeue(self):
         # Remove and return the item from the front of the queue.
         if self.is_empty():
             raise IndexError("dequeue from empty queue")
-        item = self._items[self.front]
+        item = self.items[self.front]
         self.front += 1
         return item
 
@@ -42,7 +42,7 @@ class Queue:
         # Return the item at the front of the queue without removing it.
         if self.is_empty():
             raise IndexError("peek from empty queue")
-        return self._items[self.front]
+        return self.items[self.front]
 
     def is_empty(self):
         # Check if the queue is empty.
@@ -54,7 +54,7 @@ class Queue:
 
     def __str__(self):
         # Return a string representation of the queue.
-        return str(self._items[self.front:self.rear])
+        return str(self.items[self.front:self.rear])
 
 queue = Queue()
 queue.enqueue(1)

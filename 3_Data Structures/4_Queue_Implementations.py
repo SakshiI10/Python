@@ -1,25 +1,22 @@
 # Enqueue using List at end, beginning or certain position:
+print("Enqueue")
 class Queue:
     def __init__(self, max_size):
-        self._items = []
+        self.items = []
         self.front = 0
         self.rear = 0
         self.max_size = max_size
     
     def is_full(self):
         # Check if the queue is full.
-        return self.size() >= self.max_size
-    
-    def size(self):
-        # Return the number of items in the queue.
-        return len(self._items)
+        return len(self.items) >= self.max_size
     
     def enqueue_end(self, item):
         # Add an item to the end of the queue.
         if self.is_full():
             print("Queue is full. Cannot enqueue item.")
             return
-        self._items.append(item)
+        self.items.append(item)
         self.rear += 1
     
     def enqueue_beginning(self, item):
@@ -27,7 +24,7 @@ class Queue:
         if self.is_full():
             print("Queue is full. Cannot enqueue item.")
             return
-        self._items.insert(0, item)
+        self.items.insert(0, item)
         self.rear += 1
     
     def enqueue_middle(self, item, position):
@@ -35,9 +32,9 @@ class Queue:
         if self.is_full():
             print("Queue is full. Cannot enqueue item.")
             return
-        if position < 0 or position > len(self._items):
+        if position < 0 or position > len(self.items):
             raise IndexError("Position out of bounds")
-        self._items.insert(position, item)
+        self.items.insert(position, item)
         self.rear += 1
 
 queue = Queue(max_size=5)
@@ -46,21 +43,22 @@ queue = Queue(max_size=5)
 queue.enqueue_end(1)
 queue.enqueue_end(2)
 queue.enqueue_end(3)
-print("Queue after enqueuing at the end:", queue._items)
+print("Queue after enqueuing at the end:", queue.items)
 
 # Enqueue item at the beginning
 queue.enqueue_beginning(0)
-print("Queue after enqueuing at the beginning:", queue._items)
+print("Queue after enqueuing at the beginning:", queue.items)
 
 # Enqueue item in the middle
 queue.enqueue_middle(1.5, 2)
-print("Queue after enqueuing in the middle:", queue._items)
+print("Queue after enqueuing in the middle:", queue.items)
 
 # Try to enqueue items beyond the max size
 queue.enqueue_end(4)
 
 
 # Dequeue using List at end, beginning or certain position:
+print("\nDequeue")
 class Queue:
     def __init__(self, items=None):
         if items is None:
