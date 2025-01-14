@@ -72,3 +72,7 @@ Operator    Name
 <<          Left Shift zero fill
 >>          Right shift zero fill
 '''
+print(11>>4)
+print(11<<4)
+print(23<<2)
+print(23>>3)

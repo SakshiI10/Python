@@ -1,5 +1,5 @@
-print("one \
-    two \
+print("one\
+    two\
     three")
 print("\\ is single slash")
 print("\' is single quote")

@@ -17,7 +17,7 @@ class LinkedList:
         # Check if the list is empty
         if self.head is None:
             # If the list is empty, set the new node as the head
-            self.head = new_node
+            self.head = new_node 
         else:
             # If the list is not empty, set the new node's next to the current head
             new_node.next = self.head
