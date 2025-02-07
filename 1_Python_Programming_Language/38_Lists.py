@@ -28,6 +28,7 @@ num = [1,2,3,4,5,6,7,8,9,0]
 print(num)
 
 mix=['zero', 1, 'two', 3.0, 4, 'five', 6.0]
+
 print(mix)
 print(mix[0])
 print(mix[1])
