@@ -22,5 +22,5 @@ Tup = 10, 20, -50, "python"
 Tup = ()
 
 8) With Tuple() Constructor
-Tup=tuple(10, 20, 30, 40, 50)
+Tup = tuple(10, 20, 30, 40, 50)
 '''
