@@ -23,5 +23,8 @@ d6={1: "one", 2: "two", 3: "three"}
 print(d6)
 
 # To access data from the dictionary we use the keys to access their corresponding values. 
-d={100: 'abc', 200: 'def', 300: 'ghi'}
-print(d[100])
+d7={100: 'abc', 200: 'def', 300: 'ghi'}
+print(d7[100])
+
+d8={1:'2.0', 'a':3, 4.5: 'b'}
+print(d8)
