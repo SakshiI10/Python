@@ -49,6 +49,7 @@ print(s4)
 # remove(): Raise an error in such a condition(if element ois not present in the set).
 
 # pop(): The pop() is an inbuilt method in python that is used to pop out or remove the elements one by one from the set. The element that is the smallest in the set is removed first followed by removing elements in increasing order. 
+
 s4.pop()
 print(s4)
 
