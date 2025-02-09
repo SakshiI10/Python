@@ -1,8 +1,8 @@
-i = 0
-if i in (0, 1, 2):  # Checking if i is in the given tuple
-    print("GATEDA2025")
+# Concept 1: Lists inside a tuple can be edited but tuple alone can't be edited.
 
-if i == (2, 3, 0)[-1]:  # Checking if i is equal to the last element of the tuple
-    print("HOLIDAY")
-else:
-    print("BYE")
+siblings_ids = (1, 2, [3, 4], 11, 9)
+
+siblings_ids[2].append(5)  # Modifies the list at index 2
+print(siblings_ids)  # Output: (1, 2, [3, 4, 5], 11, 9)
+siblings_ids[4] = 10  # Modifies the list at index 2
+print(siblings_ids)  # Output: (1, 2, [3, 4, 5], 11, 9)
