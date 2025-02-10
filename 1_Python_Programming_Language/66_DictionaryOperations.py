@@ -33,8 +33,8 @@ Update Values in Dictionary:
 '''
 student_details[500]="mno"
 print(student_details)
-''' 
 
+''' 
 Delete Elements from the Dictionary
 1. del statement can be used to delete an element from the dictionary.
 del d[key]
