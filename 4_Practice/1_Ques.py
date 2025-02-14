@@ -1,4 +1,4 @@
-# Concept 1: Lists inside a tuple can be edited but tuple alone can't be edited.
+# Concept 1: Lists inside a tuple can be edited but tuple can't.
 
 siblings_ids = (1, 2, [3, 4], 11, 9)
 
