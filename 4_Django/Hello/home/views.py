@@ -2,6 +2,8 @@ from django.shortcuts import render, HttpResponse
 # Added manually for submitting form in database
 from datetime import datetime
 from .models import Contact 
+# Added manually for message after form submission
+from django.contrib import messages
 
 # Create your views here manually.
 def index(request):
@@ -32,4 +34,5 @@ def contact(request):
         contact=Contact(name=name, email=email, phone=phone, desc=desc, date=datetime.today())
 
         contact.save()
+        messages.success(request, "Message sent!")
     return render(request, 'contact.html')
