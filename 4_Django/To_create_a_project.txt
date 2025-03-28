@@ -1,0 +1,4 @@
+To create a new project:
+1. Go to the folder and open Windows Powershell
+2. Type django admin to check all commands
+3. Type django-admin startproject userproject to create a new project

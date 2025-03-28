@@ -1,0 +1,39 @@
+PS D:\My codes\Python\4_Django\Hello> python manage.py shell
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)] on win32
+se" for more information.
+(InteractiveConsole)
+>>> from home.models import Contact
+>>> Contact.objects.all()
+<QuerySet [<Contact: Sakshi>, <Contact: Sakshi Ingole>, <Contact: Sakshi Ingole>]>
+>>> Contact.objects.all()
+<QuerySet [<Contact: Sakshi>, <Contact: Sakshi Ingole>]>
+>>> Contact.objects.all()[0]
+<Contact: Sakshi>
+>>> Contact.objects.all()[0].name
+'Sakshi'
+>>> Contact.objects.all()[0].email
+'sakshiingole32@gmail.com'
+>>> Contact.objects.all()[0].phone
+'9999999999'
+>>> Contact.objects.filter(name="Sakshi")
+<QuerySet [<Contact: Sakshi>]>
+>>> Contact.objects.filter(name="Ingole") 
+<QuerySet []>
+>>> Contact.objects.filter(name="Sakshi", phone="9999999999") 
+<QuerySet [<Contact: Sakshi>]>
+>>> ins = Contact.objects.filter(name="Sakshi", phone="9999999999")[0]
+>>> ins.phone="1234567890"
+>>> ins.save()
+>>> Contact.objects.all().first()
+<Contact: Sakshi>
+>>> Contact.objects.all().last()
+<Contact: Sakshi Ingole>
+>>> Contact.objects.filter(desc__startswith="This is")
+<QuerySet [<Contact: Sakshi Ingole>]>
+>>> Contact.objects.filter(desc__startswith="this is") 
+<QuerySet [<Contact: Sakshi Ingole>]>
+>>> exit()
+now exiting InteractiveConsole...
+PS D:\My codes\Python\4_Django\Hello> 
+
+for more details visit: https://docs.djangoproject.com/en/5.1/topics/db/queries/
