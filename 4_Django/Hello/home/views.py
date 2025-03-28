@@ -1,4 +1,7 @@
 from django.shortcuts import render, HttpResponse
+# Added manually for submitting form in database
+from datetime import datetime
+from .models import Contact 
 
 # Create your views here manually.
 def index(request):
@@ -18,5 +21,15 @@ def services(request):
     return render(request, 'services.html')
 
 def contact(request):
-    # return HttpResponse("This is contact")
+    # return HttpResponse("This is contact") 
+
+    # If you want to store your form in database, then this is the logic:
+    if request.method == "POST":
+        name=request.POST.get('name')
+        email=request.POST.get('email')
+        phone=request.POST.get('phone')
+        desc=request.POST.get('desc')
+        contact=Contact(name=name, email=email, phone=phone, desc=desc, date=datetime.today())
+
+        contact.save()
     return render(request, 'contact.html')
