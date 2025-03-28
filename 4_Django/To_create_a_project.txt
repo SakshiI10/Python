@@ -1,4 +1,52 @@
 To create a new project:
 1. Go to the folder and open Windows Powershell
 2. Type django admin to check all commands
-3. Type django-admin startproject userproject to create a new project
+3. Type django-admin startproject userproject to create a new project.
+
+
+To start an app
+1. Open VS Code from same folder
+2. python manage.py makemigrations 
+3. python manage.py migrate
+4. python manage.py startapp home
+
+
+To run server
+1. Open apps.py copy app name and add it to settings (eg, 'home.apps.HomeConfig',)
+
+2. Create static and templates folder
+3. Set static folder by pasting following code in settings.py
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,"static")
+]
+
+4. Set templates by pasting following code in settings.py in TEMPLATES: DIRS=[]
+os.path.join(BASE_DIR,"Templates")
+5. Now create html files in templates.
+6. Now go to project_folder -> urls.py.
+paste this in include: from django.urls import path, include
+paste this in urlpatterns: path('', include('home.urls')),
+
+7. Create urls.py in home and type:
+from django.contrib import admin
+from django.urls import path
+from home import views
+
+urlpatterns = [
+    path("", views.index, name='home'),
+    path("about", views.about, name='about'),
+    path("services", views.services, name='services'),
+    path("contact", views.contact, name='contact'),
+] 
+
+8. Paste following code in views.py
+from django.shortcuts import render, redirect
+
+# Create your views here.
+def index(request):
+    return render(request, 'index.html')
+
+8. Create superuser by python manage.py createsuperuser
+
+9. Now go to http://127.0.0.1:8000/admin/ and login
+10. Now make your html pages
