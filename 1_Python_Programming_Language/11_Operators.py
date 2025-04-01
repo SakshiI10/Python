@@ -69,8 +69,8 @@ Operator    Name
 |           OR
 ^           XOR
 ~           NOT
-<<          Left Shift zero fill
->>          Right shift zero fill
+>>          Left Shift zero fill (divide by 2 raise to the value given)
+<<          Right shift zero fill (multiply by 2 raise to the value given)
 '''
 print(11>>4)
 print(11<<4)
