@@ -2,7 +2,7 @@
 String Handling:
 1) Python does not have character datatype as in Python character is also considered as string of length one.
 
-2) Like array C in C++, Python handles characters of string using square bracket and subscript i.e. index no i.e. position.
+2) Like array C and C++, Python handles characters of string using square bracket and subscript i.e. index no i.e. position.
 
 3) Position of first character in string is always zero.
 

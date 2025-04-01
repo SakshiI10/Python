@@ -1,26 +1,26 @@
 # List Methods:
 
-# 1) append():
+# 1) append(): Adds x to the end of the list as a single element.
 days=["Mon", "Tue", "Wed"]
 print(days)
 days.append("Thu")
 print(days)
 
-# 2) extend()
+# 2) extend(): it iterates over the given iterable (like a list, tuple, or string) and adds each of its elements individually to the list.
 months=["Jan", "Feb"]
 months.extend(["Mar"])
 print(months)
 
-# 3) insert()
+# 3) insert(): Inserts x at index i, shifting elements to the right.
 n=[0, 1, "two", 4, "five", 6, 7, 8, "nine"]
 n.insert(3, "three")
 print(n)
 
-# 4) remove()
+# 4) remove(): Removes the first occurrence of the specified value.
 n.remove(1)
 print(n)
 
-# 5) pop()
+# 5) pop(): Removes and returns the element at the given index, when no index is given, it removes and returns the last element from the list by default.
 n.pop()
 print(n)
 n.pop(1)

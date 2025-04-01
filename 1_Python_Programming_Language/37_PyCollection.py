@@ -10,5 +10,5 @@ d) Set: It is a collection which is unordered and unindexed and it does not allo
 
 e) Dictionary: It is a collection which is unordered, mutable and indexed and it does not allow duplicate members.
 
-2) Efficiency of the program depends on the selection appropriate collection type.
+2) Efficiency of the program depends on the selection of an appropriate collection type.
 '''

@@ -1,6 +1,6 @@
 score='19.67'
 score2='20'
-# 1) isdecimal()
+# 1) isdecimal(): don't allow float values or any non-numeric characters.
 print(score.isdecimal())
 print(score2.isdecimal())
 
@@ -19,8 +19,8 @@ print(str.count('lar', 10, 20))
 
 c="INDIAN"
 # 5) startswith()
-print(c.endswith('N'))
-print(c.endswith('n'))
+print(c.startswith('I'))
+print(c.startswith('i'))
 
 # 6) endswith()
 print(c.endswith('N'))
