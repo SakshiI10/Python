@@ -13,19 +13,19 @@ print(d)
 To get the value associated with the key.
 d.get(key)
 '''
-#print(d.get(1))               
+print(d.get(1))               
 
 ''' 
 3. pop()
 It removes the entry associated with the specified key and returns the corresponding value if the specified key is not available then we will get KeyError
 '''
-#print(d.pop(3))
+# print(d.pop(3))
             
 ''' 
 4. popitem()
 It removes an arbitrary item(key-value) from the dictionary and returns it.
 '''
-#print(d.popitem())
+# print(d.popitem())
 
 ''' 
 5. keys()

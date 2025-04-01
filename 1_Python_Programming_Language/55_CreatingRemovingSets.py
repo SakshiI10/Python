@@ -12,7 +12,7 @@ print(type(s2))
 
 # We can't access or change an element of a set using indexing or slicing. Set data type doesn't not support it.
 s3={10, 20, "python", "everyone", 40}
-# print(s3[0])  # 'set' object is not subscirptable
+# print(s3[0])  # 'set' object is not subscriptable
 
 ''' 
 2. Add Items to Set
@@ -46,7 +46,7 @@ d) discard(): Leaves a set unchanged if the element is not present in the set.
 s4.discard(3)
 print(s4)
 
-# remove(): Raise an error in such a condition(if element ois not present in the set).
+# remove(): Raise an error in such a condition (if element is not present in the set).
 
 # pop(): The pop() is an inbuilt method in python that is used to pop out or remove the elements one by one from the set. The element that is the smallest in the set is removed first followed by removing elements in increasing order. 
 

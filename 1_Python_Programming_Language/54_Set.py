@@ -10,7 +10,7 @@ Sets:
 
 5. The items in a set don't have a defined order.
 
-6. Set is mutable so we can modify it. Once a set is created, you can't change its items, but you can remove items and add new items.
+6. Set are partially mutable so we can modify it. Once a set is created, you can't change its items, but you can remove items and add new items.
 
 7. No duplicate elemenets are allowed.
 
