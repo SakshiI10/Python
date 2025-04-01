@@ -32,3 +32,5 @@ print(5j)
 print(0.02j)
 print(.01j)
 print(1.23e3j)
+
+# Constants are assigned to a variable (eg, Pi=3.14) but literals are not assigned to variables (eg, print(100))

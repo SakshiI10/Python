@@ -2,8 +2,8 @@
 1) Numbers: 
    Python supports 3 types of numbers: 
       i) Integers or fixed point numbers
-      ii) Reals or FLoating point numbers
-      iii) Coplex numbers
+      ii) Reals or Floating point numbers
+      iii) Complex numbers
 '''
 a=10
 b=20

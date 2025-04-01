@@ -1,9 +1,11 @@
 ''' 
 Type Conversion:
 1) It is the process of converting value of one data type to another compatible data type.
+
 2) Python supports 2 type of type conversion:
-    i) Implicit type conversion
-    ii) Explicit type conversion
+    i) Implicit type conversion: When Python automatically converts one data type to another without user intervention.
+    ii) Explicit type conversion: When the user manually converts one data type to another using type conversion functions.
+    
 i) Implicit type conversion:
 a) This is done mechanically and implicitly by Python.
 b) While converting, it is necessary to take care to avoid data loss and hence python promotes conversion from lower data type to higher data type from integer float.

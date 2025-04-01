@@ -1,6 +1,6 @@
 ''' 
 Introduction to Python:
-1. Python is an interpreted, high level, general purpose, object oriented, versatile and very popular open source programming   language.
+1. Python is an interpreted, high level, general purpose, object oriented, versatile and very popular open source programming language.
 
 2. It is designed by Guido Van Rossum in 1991.
 

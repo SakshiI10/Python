@@ -1,9 +1,9 @@
 print("one\
     two\
     three")
-print("\\ is single slash")
-print("\' is single quote")
-print("\" is double quote")
+print("\\ It is a single slash")
+print("\' It is a single quote")
+print("\" This are double quote")
 print("Line1\nLine2...")
 print("Line1\rLine2")
 print("One\tTwo")
