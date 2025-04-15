@@ -15,7 +15,7 @@ i. Scope: inside a function
 ii. Life: Period throughout which variable exists
 
 b. Global:
-i. Scope: Throughout the funstion
+i. Scope: Throughout the function
 ii. Life: Entire Execution
 
 6. Docstring

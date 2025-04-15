@@ -23,20 +23,22 @@ c. Hence, Multiple objects can be created from a single class, each with its own
 class Dog:
   # Attributes (data): These attributes represent the data that each dog object will hold.
   breed = ""
-  age = 0
+  age = 1
 
   # Methods (functions)
   def bark(self):
     print(self.breed)
+    print(self.age)
 
 # Create objects (instances) of the Dog class
 dog1 = Dog()
+
+# But the moment you write: dog1.breed = "Labrador" You are overriding the class-level breed attribute just for that object (dog1). Now dog1 has its own breed, different from the class default.
 dog1.breed = "Labrador"
 dog1.age = 3
 
 dog2 = Dog()
 dog2.breed = "Poodle"
-dog2.age = 1
 
 # Call methods on the objects
 dog1.bark()  
