@@ -10,3 +10,7 @@ Set-ExecutionPolicy Unrestricted
 
 4. Run python Code.
 python 1_hello_world.py 
+
+5. Create static and templates folder
+Do not add confidential files in static folder as it's data would be directly visible on the weebpage.
+
