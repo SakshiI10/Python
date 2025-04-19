@@ -14,7 +14,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">My Todo</a>
+        <a class="navbar-brand" href="/">My Todo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,7 +43,7 @@
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-dark" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -51,15 +51,16 @@
 
     <div class="container">
       <h2>Add a Todo</h2>
+      <form action="/" method="POST">
       <form>
         <div class="mb-3">
           <label for="title" class="form-label">Todo Title</label>
-          <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+          <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp">
         </div>
         
         <div class="mb-3">
           <label for="desc" class="form-label">Todo Description</label>
-          <input type="text" class="form-control" id="desc">
+          <input type="text" class="form-control" name="desc" id="desc">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
@@ -71,29 +72,25 @@
         <thead>
           <tr>
             <th scope="col">Sr No</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Time</th>
+            <th scope="col">Actions</th>
           </tr>
         </thead>
         <tbody>
+          {% for todo in allTodo %}
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th scope="row">{{ loop.index }}</th>
+            <td>{{ todo.title }}</td>
+            <td>{{ todo.desc }}</td>
+            <td>{{ todo.date_created }}</td>
+            <td>
+              <a href="/update/{{ todo.sno }}" class="btn btn-outline-dark btn-sm mx-1">Update</a>
+              <a href="/delete/{{ todo.sno }}" class="btn btn-outline-dark btn-sm mx-1">Delete</a>
+            </td>
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+          {% endfor %}
         </tbody>
       </table>
     </div>

@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
@@ -16,14 +16,37 @@ class Todo(db.Model):
     def __repr__(self):
         return f"{self.sno} - {self.title}"
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def hello_world():
-    return render_template('index.html')
+    if request.method=='POST':
+        title = request.form['title']
+        desc = request.form['desc']
+        todo = Todo(title=title, desc=desc)
+        db.session.add(todo)
+        db.session.commit()
+    allTodo = Todo.query.all()
+    # print(allTodo)
+    return render_template('index.html', allTodo=allTodo)
 
-@app.route('/products')
+@app.route('/show')
 def products():
+    allTodo = Todo.query.all()
+    print(allTodo)
+    return 'This is products page'
+
+@app.route('/update')
+def update():
+    allTodo = Todo.query.all()
+    print(allTodo)
+    return 'This is products page'
+
+@app.route('/delete/<int:sno>')
+def delete(sno):
+    todo = Todo.query.filter_by(sno=sno).first()
+    db.session.delete(todo)
+    db.session.commit()
     return 'This is products page'
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8000)  
+    app.run(debug=True, port=8000)  #Keep it true while developing so as to see the error. But when deployed use False.
     
