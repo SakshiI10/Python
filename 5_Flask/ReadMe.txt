@@ -26,3 +26,5 @@ Do not add confidential files in static folder as it's data would be directly vi
 >>> exit()
 
 9. Open sqlite viewer.
+
+10. build app.py and index.html as you need.
