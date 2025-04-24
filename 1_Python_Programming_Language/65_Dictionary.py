@@ -25,6 +25,6 @@ dict4={1: 'a', 4: 'd', 3: 'c'}
 
 8. Indexing and slicing are not allowed.
 
-9. Values in a dictionary can be of any data type and can be duplicate.
+9. Values in a dictionary can be of any data type and can't be duplicate.
 integer, string, float and list
 '''

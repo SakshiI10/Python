@@ -60,7 +60,7 @@ print(s4)
 ''' 
 
 ''' 
-Del: The ddel keyword will delete the set completely. 
+Del: The del keyword will delete the set completely. 
 del s4
 print(s4)
 '''
