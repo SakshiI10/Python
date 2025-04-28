@@ -12,12 +12,7 @@ There are a variety of runtime errors that occur such as:
 2. I/O Errors
 3. Undefined Object Errors
 4. Division by zero errors and many more.
-'''
-x=int(input("Enter number 1:"))
-y=int(input("Enter number 2:"))
-print(x+y)
 
-''' 
 Exception:
 An unwanted and unexpected event that disturbs the normal flow of a program is called an exception.
 
@@ -29,6 +24,25 @@ It is a built-in python exception when a number is divided by 0.
 
 2. TypeError
 If you attempt to divide an integer with a string, the data types of the integer and the string object will not be compatible.
-
-
 '''
+
+try:
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter another number: "))
+    result = num1 / num2
+    print("Result:", result)
+
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero!")
+
+except ValueError:
+    print("Error: Invalid input! Please enter numbers only.")
+
+except Exception as e:
+    print("An unexpected error occurred:", e)
+
+else:
+    print("Division successful!")
+
+finally:
+    print("Execution complete.")
