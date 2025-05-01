@@ -16,3 +16,8 @@ a. Built In Functions
 b. User Defined Functions
 c. Recursive Functions
 '''
+
+def greet(name):  # 'name' is a **parameter**
+    print("Hello", name)
+
+greet("Alice")     # "Alice" is an **argument**

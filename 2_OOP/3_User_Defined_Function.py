@@ -33,7 +33,7 @@ d. Function can return numeric value, list, tuple, or a dictionary.
 '''
 
 def square(n):
-    return n 
+    return n*n 
 
 def cube(n):
     return square(n)*n

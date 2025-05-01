@@ -8,7 +8,7 @@ init Function:
 
 4. The first parameter of a method is self.
 
-5. The self parameter is reference to the current instance of the class which is used to access variables belonging to the class.
+5. The self parameter is reference to the current instance of the class, self refers to that exact object inside the class methods.
 '''
 
 class Student:
@@ -26,7 +26,7 @@ class Student:
         print("Marks: ", self.marks)
 
 # Create Student Objects
-s1 = Student('10', 'Sakshi', '84.07')
+s1 = Student('10', 'Sakshi', '84.08')
 
 # Call the display method on each object
 s1.display()

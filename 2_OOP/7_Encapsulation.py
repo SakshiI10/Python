@@ -13,9 +13,10 @@ a. Getter: It gets the values and do not change values of attributes.
 b. Setter: It changes the value of attributes.
 '''
 
+# Encapsulation is done by encapsulating the code in a class
 class BankAccount:
   def __init__(self, balance):  # Constructor
-    self.__balance = balance  # Private attribute
+    self.__balance = balance  # Private attribute and this is data hiding because __ is used.
 
   def get_balance(self):  # Public method to access balance
     return self.__balance
@@ -30,3 +31,8 @@ account = BankAccount(100)
 print(account.get_balance())  # Output: 100
 account.deposit(50)
 print(account.get_balance())  # Output: 150
+
+'''
+With private method: Others can change it safely, because you control the rules.
+Without private method: Others can’t change the private data.
+'''

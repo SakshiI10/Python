@@ -1,6 +1,6 @@
 '''
 Inheritance:
-1. It is the process of deriving new classes(subclasses, derived classes, or child classes) the existing classes  (superclasses, base classes, or parent classes).
+1. It is the process of deriving new classes (subclasses, derived classes, or child classes) from existing classes (superclasses, base classes, or parent classes).
 
 2. a. Base Class: The original class that defines the properties and methods that will be inherited.
 
@@ -39,18 +39,20 @@ print(y)
 # Accessing parent class member in child class
 class base:
     def __init__(self, a):
-        self.a=a
+        self.a = a
 
 class derived(base):
     def __init__(self, x, y):
-        base.a=x
-        self.b=y
-    def print_sum(self):
-        self.s=base.a+self.b
-        print("Sum:",self.s)
+        super().__init__(x)  # Correct way to call base class constructor
+        self.b = y
 
-d=derived(1, 2)
-d.print_sum()
+    def print_sum(self):
+        self.s = self.a + self.b  # Accessing 'a' from base class
+        print("Sum:", self.s)
+
+d = derived(1, 2)
+d.print_sum()  # Output: Sum: 3
+
 
 '''
 5. Inheritance reflects IS-A relationship among classes.

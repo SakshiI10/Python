@@ -7,10 +7,10 @@ a. Prevents accidental modification
 b. Enhances security
 c. Improves code maintainability
 '''
-
+# Encapsulation is done by encapsulating the code in a class
 class BankAccount:
   def __init__(self, balance):  # Constructor
-    self.__balance = balance  # Private attribute
+    self.__balance = balance  # Private attribute and this is data hiding because __ is used.
 
   def get_balance(self):  # Public method to access balance
     return self.__balance

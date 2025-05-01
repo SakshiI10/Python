@@ -21,7 +21,7 @@ class Animal:
     """
 
     def __init__(self, name):
-        self.__name = name  # Private attribute for animal's name (encapsulation)
+        self.__name = name  # Private attribute for animal's name.
 
     def get_name(self):
         """Public method to access the animal's name (encapsulation)."""
