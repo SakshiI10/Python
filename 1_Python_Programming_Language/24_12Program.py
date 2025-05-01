@@ -1,4 +1,5 @@
 # Reverse of number
+
 n=int(input("Enter a number: "))
 rev=0
 while(n>0):

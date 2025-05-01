@@ -8,7 +8,6 @@ String Handling:
 
 4) We can extract characters from string if their position is known.
 
-
 String Operators:
 Sr.No.      Operators       Purpose
 1           +               concatenation

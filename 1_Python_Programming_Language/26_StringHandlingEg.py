@@ -14,7 +14,8 @@ s3=''Python''
 print(s1 + s2 + s3)
 
 print("Good Morning\nWel come to Python")
- '''
+'''
+
 city='Nagpur'
 print(city)
 print(city[0])

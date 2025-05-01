@@ -28,7 +28,7 @@ print(c.endswith('n'))
 
 a="27Feb2024"
 b="27 Feb 2024"
-# 7) isalnum()
+# 7) isalnum(): Space and special character is not allowed.
 print(a.isalnum())
 print(b.isalnum())
 print("!@#$%".isalnum())
