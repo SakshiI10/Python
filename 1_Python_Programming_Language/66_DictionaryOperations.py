@@ -1,5 +1,5 @@
 ''' 
-1. has_key(): We can prevent this by checking whether key is already available or ot by using has_key() function or by using in operator.
+1. has_key(): We can check whether key is available or not by using has_key() function or by using in operator.
 '''
 d={100: 'a', 200: 'b', 300: 'c'}
 # d.has_key(400)

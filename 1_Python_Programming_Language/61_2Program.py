@@ -8,8 +8,8 @@ print(setF)
 setF.update(["Apple", "Chickoo"])
 print(setF)
 
-numSet=([1,2,3,4,5])
-print("Origignal set: ", numSet)
+numSet={1,2,3,4,5}
+print("Original set: ", numSet)
 #numSet.pop()
 #print("After pop(): ", numSet)
 

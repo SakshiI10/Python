@@ -18,7 +18,7 @@ else:
 '''
     
 ''' 
-Q8: FInding repeated elements in a tuple.
+Q8: Finding repeated elements in a tuple.
 '''
 repeated_items=[]
 for i in range(len(my_tuple)):
