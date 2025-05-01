@@ -17,10 +17,10 @@ print(c)
 
 ''' 
 ii) Explicit type conversion:
-a) We know that Python is object oriented.
+a) We know that Python is Object Oriented.
 b) Hence Python allows user to convert data type of an object to required data type.
 c) Python supports explicit type conversion using predefined funstion int(), float(), str(), etc.
-d) Explicit type conversionis also called as Type Casting
+d) Explicit type conversion is also called as Type Casting.
 '''
 a=125
 b=254.25

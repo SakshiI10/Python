@@ -1,6 +1,6 @@
 ''' 
 Escape Sequence in Python:
-1) \ is a special character caled escape sequence character.
+1) \ is a special character called escape sequence character.
 2) Python made following escape sequence characters available for output formatting
 3)  Sr No       Escape Sequence      Use/Purpose
     1)          \                    New line

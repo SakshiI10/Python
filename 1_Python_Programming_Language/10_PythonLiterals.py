@@ -9,12 +9,14 @@ Literals are notations for constant values of some in-built data types.
 '''
 
 #i) Integer Literals:
+print("Integer Literals")
 print(12_345)
 print(0x123)
 print(0o50)
 print(0b1011001)
 
 #ii) Floating Point Literals
+print("Floating Point Literals")
 print(123.456)
 print(12_34.45_67)
 print(0.01)
@@ -27,6 +29,7 @@ print(0e0)
 print(77e05)
 
 #iii) Imaginery Literals
+print("Imaginary Literals")
 print(1.23j)
 print(5j)
 print(0.02j)

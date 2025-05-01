@@ -24,7 +24,7 @@ print(c1*c2)
 ''' 
 2) Strings:
    i) String literal is a value that consists of alphabets, digits and special symbols.
-   ii) String can be enclosed in single quotes('..') or double quotes("...")
+   ii) String can be enclosed in single quotes('..') or double quotes("...").
    iii)Backslash(\) can be used to escape quotes and interprete following charater as a special character.
    1v) Use (+) to conncatenate string variables and/or literals.
 '''
