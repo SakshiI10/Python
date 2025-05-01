@@ -1,4 +1,4 @@
-#Input a number and coputer its factorial.
+#Input a number and compute its factorial.
 
 n=int(input("Enter a number: "))
 f=1

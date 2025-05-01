@@ -29,7 +29,7 @@ Operator    Name                            Example (a=15, b=4)
 -=          Subtract and Assign             a-=b i.e., a=11
 *=          Multiply and Assign             a*=b i.e., a=60
 /=          Divide and Assign               a/=b i.e., a=3.75
-5=          Modulus and Assign              a%=b i.e., a=3
+%=          Modulus and Assign              a%=b i.e., a=3
 //=         Floor division and assign       a//=b i.e., a=3
 **=         Exponentiation and assign       a**=b i.e., a=50625
 &=          Bitwise AND and assign          a&=b i.e., a=4
