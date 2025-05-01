@@ -12,7 +12,7 @@ print(x)
 # Add items
 y.append('goat')
 x=tuple(y)
-print(y)
+print(x)
 
 # Add tuple to tuple
 z=('zebra',)    #, is must
