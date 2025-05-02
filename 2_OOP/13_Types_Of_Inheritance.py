@@ -6,9 +6,9 @@ class base:
         self.a = a
 
 class derived(base):
-    def __init__(self, x, y):
-        super().__init__(x)  # Call base class constructor with x
-        self.b = y
+    def __init__(self, a, b):
+        super().__init__(a)  # Call base class constructor with x
+        self.b = b
 
     def print_sum(self):
         self.s = self.a + self.b
@@ -102,3 +102,39 @@ sum_result = calculator.calculate_sum()
 larger_number = finder.find_larger()
 
 print("Sum using Hierarchical Inheritance:", sum_result, "and Larger number:",larger_number) 
+
+'''
+5. Hybrid Inheritance
+'''
+class base1:
+    def __init__(self, a):
+        self.a=a
+
+class base2:
+    def __init__(self, b):
+        self.b=b
+
+class Sum_Calc(base1):
+    def __init__(self, a, b):
+        base1.__init__(self, a)
+        base2.__init__(self, b)
+        self.c=self.a+self.b
+    def print_sum(self):
+        # print(self.c)
+        pass
+
+class Mul_Calc(base1, base2):
+    def __init__(self, a, b, c, d):
+        self.a=a
+        self.b=b
+        self.c=c
+        self.d=d
+    def print_Mul(self):
+        self.s=self.a*self.b*self.c*self.d
+        print(self.s)
+
+d1=Sum_Calc(1, 2)
+d1.print_sum()
+d2=Mul_Calc(d1.a, d1.b, d1.c, 4)
+d2.print_Mul()
+
