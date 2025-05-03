@@ -5,7 +5,7 @@ virtualenv env
 2. Open Administrator Windows Powershell.
 Set-ExecutionPolicy Unrestricted
 
-3. Come back to VS Code.
+3. Come back to VS Code and activate the environment created.
 .\env\Scripts\activate.ps1
 
 4. Run python Code.

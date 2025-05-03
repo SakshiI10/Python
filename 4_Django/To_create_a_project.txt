@@ -1,7 +1,7 @@
 To create a new project:
 1. Go to the folder and open Windows Powershell
 2. Type django admin to check all commands
-3. Type django-admin startproject userproject to create a new project.
+3. Type django-admin startproject Hello to create a new project.
 
 
 To start an app
@@ -15,14 +15,17 @@ To run server
 1. Open apps.py copy app name and add it to settings (eg, 'home.apps.HomeConfig',)
 
 2. Create static and templates folder
+
 3. Set static folder by pasting following code in settings.py
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,"static")
 ]
 
-4. Set templates by pasting following code in settings.py in TEMPLATES: DIRS=[]
+4. Set templates by pasting following code in settings.py -> TEMPLATES: DIRS=[]
 os.path.join(BASE_DIR,"Templates")
+
 5. Now create html files in templates.
+
 6. Now go to project_folder -> urls.py.
 paste this in include: from django.urls import path, include
 paste this in urlpatterns: path('', include('home.urls')),
@@ -48,5 +51,6 @@ def index(request):
 
 8. Create superuser by python manage.py createsuperuser
 
-9. Now go to http://127.0.0.1:8000/admin/ and login
-10. Now make your html pages
+9. Now go to http://127.0.0.1:8000/admin/ and login.
+
+10. Now make your html pages in Templates folder.

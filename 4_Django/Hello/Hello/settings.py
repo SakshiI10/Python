@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # Added manually HomeConfig
+    # 1. Added manually HomeConfig
     'home.apps.HomeConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'Hello.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # Added manually in list of DIR
+        # 3. Added manually in list of DIR
         'DIRS': [os.path.join(BASE_DIR,  "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -127,7 +127,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Added manually
+# 2. Added manually
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,  "static")
 ]
