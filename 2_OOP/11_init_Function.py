@@ -30,3 +30,10 @@ s1 = Student('10', 'Sakshi', '84.08')
 
 # Call the display method on each object
 s1.display()
+
+class Sample:
+    def display(self):
+        print(self)
+
+s = Sample()
+s.display()
