@@ -1,1 +1,2 @@
+This file was created with 'w' mode.
 Created and written using with-block.

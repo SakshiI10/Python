@@ -8,12 +8,13 @@ f = open('newfile.txt', 'r')
 print(f.read())
 f.close()
 
-# Open the file for writing again
-with open('newfile.txt', 'w') as f:
+# Open the file again in append mode so it doesn't overwrite
+with open('newfile.txt', 'a') as f:
     f.write("Created and written using with-block.\n")
 
-# Re-open for reading (you need to open in 'r' mode to read)
+# Re-open for reading
 f = open('newfile.txt', 'r')
 print(f.read()) 
 f.close()
+
 
