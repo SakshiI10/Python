@@ -36,5 +36,3 @@ class Math:
         return a + b
 
 print(Math.add(3, 4))
-
-
