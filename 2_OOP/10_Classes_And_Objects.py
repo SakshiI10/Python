@@ -19,7 +19,7 @@ b. Use the class to create objects (instances).
 c. Hence, Multiple objects can be created from a single class, each with its own data.
 '''
 
-# Here, class contains data and attribute
+# Here, class contains attribute and methods.
 class Dog:
   # Attributes (data): These attributes represent the data that each dog object will hold.
   breed = ""

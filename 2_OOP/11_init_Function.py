@@ -15,7 +15,7 @@ class Student:
     '''This class represent a student with attribues Roll No., Name and Marks and a method to print it'''
 
     def __init__(self, rollno, name, marks):
-        '''This is the constructor method that initializes a new student object. It takes three arguments: rollno, name and marks.'''
+        '''This is the constructor method that initializes a new student object. It takes has 4 parameters: self, rollno, name and marks.'''
         self.rollno = rollno
         self.name = name
         self.marks = marks
