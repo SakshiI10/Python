@@ -25,10 +25,10 @@ class Course:
   def get_info(self):
     print(f"{self.name} course taught by {self.instructor.name}")  # Accessing instructor's name
 
-# Create a Student object
+# Create a Student object (We can pass arguments while creating object)
 student1 = Student("Alice", "123 Main St")
 
-# Create a Course object with a reference to the Student object
+# Create a Course object (We can pasa arguments while creating object)
 course1 = Course("Python Programming", student1)
 
 student1.introduce()  # Hi, I'm Alice and I live at 123 Main St.
