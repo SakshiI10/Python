@@ -12,16 +12,16 @@ A variable created inside a function is available inside that function.
 '''
 def f1():
     a=100
-    print(a)
+    print("Local var:",a)
 f1()
 ''' 
 Inner function:
-The variable a is not available outside the function, but it is availlable for any function inside the function.
+The variable a is not available outside the function, but it is available for any function inside the function.
 '''
 def f2():
     b=200
     def inner_f2():
-        print(a)
+        print("Inner var:",b)
         inner_f2()
 f2()
 
@@ -31,7 +31,7 @@ A variable created inside a function is available inside that function.
 '''
 def f3():
     c=300 
-    print(c)
+    print("Global var:",c)
 f3()
 
 ''' 
@@ -41,7 +41,7 @@ a) Global scope
 b) Local scope
 
 6. Python support two types of variables:
-a) Blobal Variables
+a) Global Variables
 b) Local variables
 '''
 e=10
@@ -54,12 +54,12 @@ fn1()
 fn2()
 
 ''' 
-Local Variable: Variables which are declared inside a function are called local variables.(Eg=e=11)
-Global Variable: Variables which are declared on top or using global keyword are called global variables.(Eg=e=10)in above code
+Local Variable: Variables which are declared inside a function are called local variables (Eg, e=11).
+Global Variable: Variables which are declared on top or using global keyword are called global variables.(Eg, e=10) in above code.
 '''
 f=10
 def fn3():
-    global f
+    global f # Here, f changed globally
     f=12
     print(f)
 def fn4():
