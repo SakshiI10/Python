@@ -4,7 +4,7 @@
 2. Parathesis() contains function arguments.
 
 3. Syntax:
-    def function_name(arguments):
+    def function_name(parameter):
         statement(s)
 
 4. Function name should be unique and function arguments are the values that are passsed to function body.
