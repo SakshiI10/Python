@@ -8,22 +8,6 @@ Functions are taken as the argument into another function and then inside the wr
 
 Multiple decorators can also be chained in Python.
 '''
-''' 
-def smartevenodd(func):
-    def inner(num):
-        print("Inside inner function")
-        if num%2==0:
-            print("Given number is even")
-        else:
-            print("Given number is odd")
-        func(num)
-    return inner
-@smartevenodd
-def even_odd(num):
-    print("Inside main function")
-num=int(input("Enter number: "))
-even_odd(num)
-'''
 
 def decor1(func):
     def inner():

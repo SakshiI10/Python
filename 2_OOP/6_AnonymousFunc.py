@@ -31,19 +31,12 @@ f=function object that accepts and stores the result of the expression
 lambda=keyword
 a=argument
 a*a=one line expression
-
-Eg, To execute a lambda function, we need to call it. This lambda function doesn't have any argument.
 '''
+#Lambda function with zero arguments
 msg=lambda:print("Hello World!")
 msg()
-''' 
-Lambda function with an argument
-Similar to normal function, a lambda function can also accept arguments.
-'''
+
+#Lambda function with two arguments
 msg2=lambda name:print("Hey there!,", name)
 msg2('Python')
-''' 
-Lambda function internally returns expression value and we are not required to write return statement explicitly.
 
-Sometimes, we can pass function as argument to another function. In such cases lambda functions are best choice.
-'''
