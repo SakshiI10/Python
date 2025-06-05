@@ -10,6 +10,7 @@ b) local scope
 3. Local scope:
 A variable created inside a function is available inside that function.
 '''
+print("Local")
 def f1():
     a=100
     print("Local var:",a)
@@ -18,6 +19,7 @@ f1()
 Inner function:
 The variable a is not available outside the function, but it is available for any function inside the function.
 '''
+print("Inner")
 def f2():
     b=200
     def inner_f2():
@@ -29,6 +31,7 @@ f2()
 4. Global scope:
 A variable created inside a function is available inside that function.
 '''
+print("Global")
 def f3():
     c=300 
     print("Global var:",c)
@@ -44,6 +47,7 @@ b) Local scope
 a) Global Variables
 b) Local variables
 '''
+print("Prac1")
 e=10
 def fn1():
     e=11
@@ -57,6 +61,7 @@ fn2()
 Local Variable: Variables which are declared inside a function are called local variables (Eg, e=11).
 Global Variable: Variables which are declared on top or using global keyword are called global variables.(Eg, e=10) in above code.
 '''
+print("Prac2")
 f=10
 def fn3():
     global f # Here, f changed globally

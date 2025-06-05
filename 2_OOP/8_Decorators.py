@@ -27,3 +27,5 @@ def decor(func):
 def num():
     return 10
 print(num())
+
+# So even though @decor1 is written on top, it’s applied after @decor.

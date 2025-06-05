@@ -9,10 +9,12 @@ init Function:
 4. The first parameter of a method is self.
 
 5. The self parameter is reference to the current instance of the class, self refers to that exact object inside the class methods.
+
+6.  The constructor (__init__) is executed when an object is created.
 '''
 
 class Student:
-    '''This class represent a student with attribues Roll No., Name and Marks and a method to print it'''
+    '''This class represent a student with attributes Roll No., Name and Marks and a method to print it'''
 
     def __init__(self, rollno, name, marks):
         '''This is the constructor method that initializes a new student object. It takes has 4 parameters: self, rollno, name and marks.'''
