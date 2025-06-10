@@ -34,7 +34,7 @@ print("Sorted array using Bubble Sort:", arr)
 a. This sorting technique repeatedly finds the minimum element and sort it in order. 
 b. During the execution of Selection Sort for every iteration, the minimum element of the unsorted subarray is arranged in the sorted subarray. 
 c. Selection Sort is a more efficient algorithm than bubble sort. 
-d. Time-Complexity: O(n2)'''
+d. Time-Complexity: O(n^2)'''
 
 def selectionSort(arr):
     n = len(arr)
