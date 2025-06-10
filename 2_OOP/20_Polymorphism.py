@@ -2,7 +2,7 @@
 Polymorphism:
 1. This is the concept of using common operation in difference ways for difference data input.
 
-2. When function with same name are used for difference data types they are called polymorphic functions.
+2. When function with same name are used for different data types they are called polymorphic functions.
 
 3. Types of Polymorphism:
 a. Compile time Polymorphism
